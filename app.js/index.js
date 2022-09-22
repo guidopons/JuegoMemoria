@@ -7,7 +7,7 @@ let segundoResultado = null;
 let movimientos = 0;
 let aciertos = 0;
 let temporizador = false;
-let timer = 50;
+let timer = 30;
 let tiempoRegresivoId = null;
 
 // Html Document
