@@ -12,10 +12,9 @@ let tiempoRegresivoId = null;
 
 // Html Document
 let mostrarMovimientos = document.getElementById('movimientos');
-let mostrarAciertos = document.getElementById('aciertos');
 let mostrarTiempo = document.getElementById('t-restante');
 // Numeros Aleatorios
-let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9];
+let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]; // 
 numeros = numeros.sort(()=>{return Math.random()-0.5});
 
 
@@ -72,6 +71,28 @@ function destapar(id){
 
         // Desabilitar luego del click
         tarjeta2.disabled = true;
+
+        if(primerResultado === segundoResultado){
+            // Encerar contador tarjetas destapadas
+            tarjetasDestapadas = 0;
+            // increment aciertos
+            aciertos++;
+           
+    
+            if(aciertos === 8){
+              
+                mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}` 
+            }
+        }else{
+            // Mostrar valores y tapar
+            setTimeout(() => {
+                tarjeta1.innerHTML = '';
+                tarjeta2.innerHTML = '';
+                tarjeta1.disabled = false;
+                tarjeta2.disabled = false;
+                tarjetasDestapadas = 0;
+            },800);
+        }
     }
 
 
@@ -81,25 +102,4 @@ function destapar(id){
     mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}`;
 
 
-    if(primerResultado === segundoResultado){
-        // Encerar contador tarjetas destapadas
-        tarjetasDestapadas = 0;
-        // increment aciertos
-        aciertos++;
-        mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
-
-        if(aciertos === 8){
-            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}   Muy Bienn!!!`;
-            mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}` 
-        }
-    }else{
-        // Mostrar valores y tapar
-        setTimeout(() => {
-            tarjeta1.innerHTML = '';
-            tarjeta2.innerHTML = '';
-            tarjeta1.disabled = false;
-            tarjeta2.disabled = false;
-            tarjetasDestapadas = 0;
-        },800);
-    }
 }
