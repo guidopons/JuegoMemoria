@@ -7,7 +7,7 @@
 body{
     font-family: sans-serif;
     background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(221,76,255,1) 100%);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgb(76, 255, 154) 100%);
     color: #fff;
 }
 
