@@ -1,5 +1,6 @@
 // Inicio de variables
 let tarjetasDestapadas = 0;
+let tarjetaBloqueada = null;
 let tarjeta1 = null;
 let tarjeta2 = null;
 let primerResultado = null;
@@ -7,6 +8,7 @@ let segundoResultado = null;
 let movimientos = 0;
 let aciertos = 0;
 let temporizador = false;
+let timerInicial = 30;
 let timer = 30;
 let tiempoRegresivoId = null;
 
@@ -24,7 +26,7 @@ numeros = numeros.sort(()=>{return Math.random()-0.5});
 function contarTiempo(){
    tiempoRegresivoId =  setInterval(()=>{
         timer--;
-        mostrarTiempo.innerHTML = `Tiempo: ${timer} segundos`
+        mostrarTiempo.innerHTML = `Tiempo restante: ${timer} segundos`
         if(timer == 0){
             clearInterval(tiempoRegresivoId);
             bloquearTarjetas();
@@ -37,7 +39,7 @@ function contarTiempo(){
 function bloquearTarjetas(){
     for(let i = 0; i <= 15; i++){
         let tarjetaBloqueada = document.getElementById(i);
-        tarjetaBloqueada.innerHTML = numeros[i];
+        tarjetaBloqueada.innerHTML = `<img src="./images/${numeros[i]}.png" alt= "">`;
         tarjetaBloqueada.disabled = true;
     }
 }
@@ -51,16 +53,16 @@ function destapar(id){
     tarjetasDestapadas++;
     // Mostrar primer numero
     if(tarjetasDestapadas === 1){
-        tarjeta1 = document.getElementById(id)
+        tarjeta1 = document.getElementById(id);
         primerResultado = numeros[id]
-        tarjeta1.innerHTML = primerResultado;
+        tarjeta1.innerHTML = `<img src="./images/${primerResultado}.png" alt= "">`;
         // Deshabilitar luego del click
         tarjeta1.disabled = true;
     }else if(tarjetasDestapadas === 2){
         // Mostrar segundo numero
         tarjeta2 = document.getElementById(id);
         segundoResultado = numeros[id];
-        tarjeta2.innerHTML = segundoResultado;
+        tarjeta2.innerHTML = `<img src="./images/${segundoResultado}.png" alt= "">`; 
 
         // Desabilitar luego del click
         tarjeta2.disabled = true;
@@ -70,11 +72,13 @@ function destapar(id){
             tarjetasDestapadas = 0;
             // aumentar aciertos
             aciertos++;
-            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`
+            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
            
             if(aciertos === 8){
-                mostrarAciertos.innerHTML = `Aciertos: ${aciertos} 💪`
-                mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎` 
+                clearInterval(tiempoRegresivoId);
+                mostrarAciertos.innerHTML = `Aciertos: ${aciertos} 💪`;
+                mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎` ;
+                mostrarTiempo.innerHTML = `Fantastico!!! Solo demoraste 💪 : ${timerInicial - timer} segundos`;
             }
         }else{
             // Mostrar valores y tapar
