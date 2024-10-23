@@ -49,9 +49,6 @@ function destapar(id){
         contarTiempo();
         temporizador = true;
     }
-
-
-
     tarjetasDestapadas++;
     // Show the first number
     if(tarjetasDestapadas === 1){
@@ -94,10 +91,7 @@ function destapar(id){
             },800);
         }
     }
-
-
     //  increment movements
-
     movimientos++;
     mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}`;
 
