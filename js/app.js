@@ -11,6 +11,7 @@ let timer = 30;
 let tiempoRegresivoId = null;
 
 // Html Document
+let mostrarAciertos = document.getElementById('aciertos');
 let mostrarMovimientos = document.getElementById('movimientos');
 let mostrarTiempo = document.getElementById('t-restante');
 // Numeros Aleatorios
@@ -48,16 +49,15 @@ function destapar(id){
         temporizador = true;
     }
     tarjetasDestapadas++;
-    // Show the first number
+    // Mostrar primer numero
     if(tarjetasDestapadas === 1){
         tarjeta1 = document.getElementById(id)
         primerResultado = numeros[id]
         tarjeta1.innerHTML = primerResultado;
-
         // Deshabilitar luego del click
         tarjeta1.disabled = true;
     }else if(tarjetasDestapadas === 2){
-        // Show the second number
+        // Mostrar segundo numero
         tarjeta2 = document.getElementById(id);
         segundoResultado = numeros[id];
         tarjeta2.innerHTML = segundoResultado;
@@ -68,11 +68,13 @@ function destapar(id){
         if(primerResultado === segundoResultado){
             // Encerar contador tarjetas destapadas
             tarjetasDestapadas = 0;
-            // increment aciertos
+            // aumentar aciertos
             aciertos++;
+            mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`
            
             if(aciertos === 8){
-                mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}` 
+                mostrarAciertos.innerHTML = `Aciertos: ${aciertos} 💪`
+                mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎` 
             }
         }else{
             // Mostrar valores y tapar
@@ -85,9 +87,7 @@ function destapar(id){
             },800);
         }
     }
-    //  increment movements
+    //  increment movimientos
     movimientos++;
     mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}`;
-
-
 }
