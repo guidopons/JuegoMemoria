@@ -41,8 +41,6 @@ function bloquearTarjetas(){
     }
 }
 
-
-
 // Funcion Destapar
 function destapar(id){
     if(temporizador == false){
@@ -55,8 +53,6 @@ function destapar(id){
         tarjeta1 = document.getElementById(id)
         primerResultado = numeros[id]
         tarjeta1.innerHTML = primerResultado;
-
-
 
         // Deshabilitar luego del click
         tarjeta1.disabled = true;
@@ -75,9 +71,7 @@ function destapar(id){
             // increment aciertos
             aciertos++;
            
-    
             if(aciertos === 8){
-              
                 mostrarMovimientos.innerHTML = `Movimientos: ${movimientos}` 
             }
         }else{
