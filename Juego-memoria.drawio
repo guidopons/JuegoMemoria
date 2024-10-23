@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.1">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1307" dy="1523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2068" dy="916" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -8,7 +8,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;div&gt;Generar arreglo numeros aleatorios&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="310" y="110" width="120" height="40" as="geometry" />
+          <mxGeometry x="310" y="100" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-4" value="SI" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-11" edge="1">
           <mxGeometry y="20" relative="1" as="geometry">
@@ -59,12 +59,12 @@
         <mxCell id="nyL9Rv-5-Ofma45vszDz-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-3" target="WIyWlLk6GJQsqaUBKTNV-10">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="370" y="240" />
+              <mxPoint x="370" y="220" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-3" value="Esperar Boton presionado" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="310" y="190" width="120" height="50" as="geometry" />
+          <mxGeometry x="310" y="170" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-11" target="nyL9Rv-5-Ofma45vszDz-17">
           <mxGeometry relative="1" as="geometry" />
@@ -121,8 +121,8 @@
         <mxCell id="nyL9Rv-5-Ofma45vszDz-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-51" target="nyL9Rv-5-Ofma45vszDz-3">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="800" y="1250" />
-              <mxPoint x="800" y="202" />
+              <mxPoint x="800" y="1190" />
+              <mxPoint x="800" y="182" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -152,7 +152,7 @@
         <mxCell id="nyL9Rv-5-Ofma45vszDz-21" value="Tarjeta&amp;nbsp;&lt;div&gt;destapadas&amp;nbsp;&lt;/div&gt;&lt;div&gt;= 2?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="315" y="640" width="110" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="nyL9Rv-5-Ofma45vszDz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-23">
+        <mxCell id="nyL9Rv-5-Ofma45vszDz-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-23" target="WIyWlLk6GJQsqaUBKTNV-3">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="370" y="110" as="targetPoint" />
           </mxGeometry>
@@ -167,7 +167,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-43" value="1.Mostrar segundo numero&lt;div&gt;2.Deshabilitar segundo boton&lt;/div&gt;&lt;div&gt;3.Incrementar movimientos&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="310" y="800" width="160" height="85" as="geometry" />
+          <mxGeometry x="290" y="800" width="160" height="85" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-45" target="nyL9Rv-5-Ofma45vszDz-47">
           <mxGeometry relative="1" as="geometry" />
@@ -186,21 +186,21 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-45" value="1er tarjeta&amp;nbsp;&lt;div&gt;=&lt;/div&gt;&lt;div&gt;2da tarjeta&lt;/div&gt;&lt;div&gt;?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="350" y="967.5" width="80" height="80" as="geometry" />
+          <mxGeometry x="330" y="920" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-47">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="800" y="1008.4285714285716" as="targetPoint" />
+            <mxPoint x="800" y="960" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-47" value="1. Mostrar momentaneamente valores&lt;div&gt;2.Volver a tapar&lt;/div&gt;&lt;div&gt;3.Encerar contador tarjetasdestapadas&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="490" y="977.5" width="210" height="62.5" as="geometry" />
+          <mxGeometry x="490" y="928.75" width="210" height="62.5" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-49" target="nyL9Rv-5-Ofma45vszDz-51">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-49" value="1. Encerar contador tarjetas destapadas&lt;div&gt;2. Aumentar y mostrar aciertos&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="1080" width="120" height="60" as="geometry" />
+          <mxGeometry x="290" y="1050" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-51" target="nyL9Rv-5-Ofma45vszDz-53">
           <mxGeometry relative="1" as="geometry" />
@@ -211,16 +211,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-51" value="Aciertos == 8 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="350" y="1210" width="80" height="80" as="geometry" />
+          <mxGeometry x="330" y="1150" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="nyL9Rv-5-Ofma45vszDz-53" target="nyL9Rv-5-Ofma45vszDz-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-53" value="Mostrar mensajes finales" style="whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="1380" width="120" height="60" as="geometry" />
+          <mxGeometry x="310" y="1270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nyL9Rv-5-Ofma45vszDz-55" value="FIN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;rounded=1;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="350" y="1510" width="80" height="80" as="geometry" />
+          <mxGeometry x="330" y="1360" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
