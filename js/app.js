@@ -16,6 +16,13 @@ let tiempoRegresivoId = null;
 let mostrarAciertos = document.getElementById('aciertos');
 let mostrarMovimientos = document.getElementById('movimientos');
 let mostrarTiempo = document.getElementById('t-restante');
+
+let winAudio = new Audio(`./sounds/win.wav`);
+let loseAudio =  new Audio(`./sounds/lose.wav`);
+let clickAudio =  new Audio(`./sounds/click.wav`);
+let rightAudio =  new Audio(`./sounds/right.wav`);
+let wrongAudio =  new Audio(`./sounds/wrong.wav`);
+
 // Numeros Aleatorios
 let numeros = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8]; // 
 numeros = numeros.sort(()=>{return Math.random()-0.5});
@@ -30,6 +37,7 @@ function contarTiempo(){
         if(timer == 0){
             clearInterval(tiempoRegresivoId);
             bloquearTarjetas();
+            loseAudio.play();
         }
     },1000)
 
@@ -56,6 +64,7 @@ function destapar(id){
         tarjeta1 = document.getElementById(id);
         primerResultado = numeros[id]
         tarjeta1.innerHTML = `<img src="./images/${primerResultado}.png" alt= "">`;
+        clickAudio.play();
         // Deshabilitar luego del click
         tarjeta1.disabled = true;
     }else if(tarjetasDestapadas === 2){
@@ -73,14 +82,17 @@ function destapar(id){
             // aumentar aciertos
             aciertos++;
             mostrarAciertos.innerHTML = `Aciertos: ${aciertos}`;
+            rightAudio.play();
            
             if(aciertos === 8){
+                winAudio.play();
                 clearInterval(tiempoRegresivoId);
                 mostrarAciertos.innerHTML = `Aciertos: ${aciertos} 💪`;
                 mostrarMovimientos.innerHTML = `Movimientos: ${movimientos} 😎` ;
                 mostrarTiempo.innerHTML = `Fantastico!!! Solo demoraste 💪 : ${timerInicial - timer} segundos`;
             }
         }else{
+            wrongAudio.play();
             // Mostrar valores y tapar
             setTimeout(() => {
                 tarjeta1.innerHTML = '';
